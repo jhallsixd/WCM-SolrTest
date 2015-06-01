@@ -31,6 +31,7 @@ import org.slf4j.LoggerFactory;
                         "port=8983",
                         "path=solr",
                         "service=solrj",
+                        "core=en",
                         "status=enabled"
                 }
         ),

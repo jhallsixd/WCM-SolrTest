@@ -17,7 +17,7 @@
 
 	<artifactId>com.sixd.olm.cq.solr-test-com.content</artifactId>
 	<packaging>content-package</packaging>
-	<name>ST.com - Content Package</name>
+	<name>SixD - Content Package</name>
 
 	<dependencies>
 

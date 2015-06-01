@@ -9,10 +9,7 @@ import java.util.Map;
 import com.day.cq.commons.jcr.JcrConstants;
 import com.day.cq.replication.ReplicationException;
 import com.day.cq.replication.Replicator;
-import com.st.olm.cq.api.ccc.CCCAsset;
-import com.st.olm.cq.api.ccc.CCCAssetManager;
-import com.st.olm.cq.api.products.STProduct;
-import com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration;
+import com.sixd.olm.cq.api.solr.conf.ApacheSolrConfiguration;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Service;
@@ -66,20 +63,6 @@ public class ApacheSolrEventListener implements EventHandler {
 
     @Reference
     ApacheSolrCommandFactoryService solrCommandFactoryService;
-
-    /**
-     * Path parts of activated product overview fragment
-     */
-    private static final String PRODUCT_RELATED_PART = "product_related";
-    private static final String OVERVIEW_PART = "overview";
-    /**
-     * Product overview fragment tag prefix
-     */
-    private static final String OVERVIEW_TAG_PREFIX = "ccc:fragment/product_related";
-    /**
-     * Tags property
-     */
-    private static final String TAGS_PROPERTY = "cq:tags";
 
     @Property(label = "Service Enabled", boolValue = false)
     private static final String ENABLED = "enabled";
@@ -138,7 +121,7 @@ public class ApacheSolrEventListener implements EventHandler {
                     try {
                         if (actionType.equals(ReplicationActionType.ACTIVATE)) {  // 12
                             cmdStr = "IndexResource";
-                            activateRelatedResources(adminResolver, res);
+
                         } else if (actionType.equals(ReplicationActionType.DEACTIVATE) ||
                                 actionType.equals(ReplicationActionType.DELETE)) {
                             cmdStr = "RemoveResource";
@@ -183,76 +166,5 @@ public class ApacheSolrEventListener implements EventHandler {
             log.error("ApacheSolrEventListener.fields exception ", e);
         }
         return fields;
-    }
-
-    private void activateRelatedResources(ResourceResolver adminResolver, Resource activatedResource) {
-        CCCAssetManager cccAssetManager = adminResolver.adaptTo(CCCAssetManager.class);
-        STProduct product = getActivatedProduct(activatedResource, cccAssetManager);
-        if (product != null) {
-            List<CCCAsset<?>> relatedAssets = getRelatedAssets(cccAssetManager, product);
-            try {
-                replicateAssets(adminResolver, relatedAssets);
-            } catch (ReplicationException e) {
-                log.error("Can't replicate related assets to the product {}" + product.getPrmisId());
-            }
-        }
-    }
-
-    private List<CCCAsset<?>> getRelatedAssets(CCCAssetManager cccAssetManager, STProduct product) {
-        List<CCCAsset<?>> relatedAssets = new ArrayList<>();
-        if (product != null) {
-            List<CCCAsset<?>> allAssets = cccAssetManager.getCCCAssets(product);
-            for (CCCAsset<?> asset : allAssets) {
-                if (!isProductOverview(asset.getResource())) {
-                    relatedAssets.add(asset);
-                }
-            }
-        } else {
-            log.trace("Product is null");
-        }
-        return relatedAssets;
-    }
-
-    private void replicateAssets(ResourceResolver adminResolver, List<CCCAsset<?>> relatedAssets)
-            throws ReplicationException {
-        for (CCCAsset<?> relatedAsset : relatedAssets) {
-            replicator.replicate(adminResolver.adaptTo(Session.class),
-                    ReplicationActionType.ACTIVATE, relatedAsset.getPath());
-        }
-    }
-
-    private STProduct getActivatedProduct(Resource activatedResource, CCCAssetManager cccAssetManager) {
-        boolean isOverview = isProductOverview(activatedResource);
-        if (isOverview) {
-            CCCAsset<?> cccAsset = cccAssetManager.getCCCAsset(activatedResource.getPath());
-            if (cccAsset.isFragment()) {
-                List<STProduct> productAssociationIds = cccAsset.getProductAssociations();
-                if (!productAssociationIds.isEmpty()) {
-                    return productAssociationIds.get(0);
-                }
-            }
-        }
-        return null;
-    }
-
-    private boolean isProductOverview(Resource activatedResource) {
-        String resourcePath = activatedResource.getPath();
-        if (resourcePath.contains(PRODUCT_RELATED_PART) && resourcePath.contains(OVERVIEW_PART)) {
-            Resource content = activatedResource.getChild(JcrConstants.JCR_CONTENT);
-            if (content != null) {
-                ValueMap properties = content.adaptTo(ValueMap.class);
-                if (properties != null) {
-                    String[] resourceTags = properties.get(TAGS_PROPERTY, String[].class);
-                    if (resourceTags != null) {
-                        for (String tag : resourceTags) {
-                            if (tag.contains(OVERVIEW_TAG_PREFIX) && tag.contains(OVERVIEW_PART)) {
-                                return true;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        return false;
     }
 }

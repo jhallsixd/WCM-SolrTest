@@ -1,7 +1,6 @@
 package com.sixd.olm.cq.api.solr.cmds;
 
 import com.sixd.olm.cq.api.SharedConstants;
-import com.sixd.olm.cq.api.products.STProduct;
 import com.sixd.olm.cq.api.solr.SolrCommand;
 import com.sixd.olm.cq.api.solr.conf.ApacheSolrConfiguration;
 import com.sixd.olm.cq.api.solr.impl.ApacheSolrResourceIndexerImpl;
@@ -90,7 +89,7 @@ public class IndexResourceCommand extends BaseSolrCommand implements SolrCommand
     public boolean execute() {
         boolean retVal = true;
         try {
-            if (null != this.resource && !isObsoleteProduct(this.resource, this.type) || (this.resources != null && !this.resources.isEmpty())) {
+            if (null != this.resource ) {
                 this.populate(type);
             }
         } catch (Exception e) {
@@ -203,31 +202,6 @@ public class IndexResourceCommand extends BaseSolrCommand implements SolrCommand
 
             post.addParameters(data);
 
-            Boolean isDoc = indexer.isDocument();
-            if (isDoc) {
-
-                String filesAttributesDataObj = indexer.getFilesAttributes();
-                InputStream is = indexer.getFileIS();
-                String contentType = indexer.getFileContentType();
-                String charset = "UTF-8";
-                InputStreamReader r = new InputStreamReader(is);
-                if (null != r.getEncoding()) {
-                    charset = r.getEncoding();
-                }
-
-                byte[] bytes = IOUtils.toByteArray(is);
-                String fileName = indexer.getFileName();
-                ByteArrayPartSource byteArrayPartSourceEN = new ByteArrayPartSource(fileName, bytes);
-                ByteArrayPartSource byteArrayPartSourceJP = new ByteArrayPartSource(fileName, bytes);
-                ByteArrayPartSource byteArrayPartSourceCN = new ByteArrayPartSource(fileName, bytes);
-
-                Part[] parts = new Part[]{new FilePart("files[en][0]", byteArrayPartSourceEN, contentType, charset),
-                        new FilePart("files[jp][0]", byteArrayPartSourceJP, contentType, charset),
-                        new FilePart("files[cn][0]", byteArrayPartSourceCN, contentType, charset),
-                        new StringPart("files_attributes", filesAttributesDataObj)};
-                post.setRequestEntity(new MultipartRequestEntity(parts, post.getParams()));
-            }
-
             client.executeMethod(post);
 
             apiResponse = post.getResponseBodyAsString();
@@ -242,9 +216,8 @@ public class IndexResourceCommand extends BaseSolrCommand implements SolrCommand
 
             SolrInputDocument doc = indexer.index(this.resource, type);
             log.info("committing doc to server " + doc.toString());
-            writeToSolrServer("en", doc);
-            writeToSolrServer("jp", doc);
-            writeToSolrServer("cn", doc);
+            String core = this.solrSettingsMap.get("core");
+            writeToSolrServer(core, doc);
 
         } catch (Exception e) {
             log.error("commit to solr exception", e);
@@ -284,20 +257,5 @@ public class IndexResourceCommand extends BaseSolrCommand implements SolrCommand
             log.error("Unable to connect to solr: ", e);
         }
         return _server;
-    }
-
-    /**
-     * If type of current page is a product type, checks product marketing status.
-     *
-     * @param resource - resource to check
-     * @param type     - type of current page
-     * @return true if type of current page is a product type and the product has obsolete marketing status
-     */
-    private boolean isObsoleteProduct(Resource resource, String type) {
-        if (type.startsWith(SharedConstants.PRODUCT_RESOURCE_TYPE_PREFIX)) {
-            STProduct product = ((STProductResource) resource).getProduct();
-            return product.isObsolete();
-        }
-        return false;
     }
 }

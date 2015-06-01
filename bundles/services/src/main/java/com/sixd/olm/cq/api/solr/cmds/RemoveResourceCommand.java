@@ -104,7 +104,7 @@ public class RemoveResourceCommand extends BaseSolrCommand implements SolrComman
 
     public void prune () throws IOException, SolrServerException {
 
-        if(this.type.toLowerCase().equals("st-site/components/pages/base")) {
+        if(this.type.toLowerCase().equals("solr/components/pages/base")) {
             SolrPage indexResource = null;
             indexResource = this.resource.adaptTo(SolrPage.class);
             this.id = indexResource.getID().toString();
@@ -113,7 +113,8 @@ public class RemoveResourceCommand extends BaseSolrCommand implements SolrComman
         try {
 
             if(this.solrSettingsMap.get("service").equals("solrj")) {
-                removeIndexSolrj("en", this.id);
+                String core = this.solrSettingsMap.get("core");
+                removeIndexSolrj(core, this.id);
             } else {
                 removeIndexService(this.id);
             }
@@ -144,6 +145,7 @@ public class RemoveResourceCommand extends BaseSolrCommand implements SolrComman
             String env = this.solrSettingsMap.get("environment");
             String port = this.solrSettingsMap.get("port");
             String path = this.solrSettingsMap.get("path");
+            String core = this.solrSettingsMap.get("core");
             String url = env + ":" + port + "/delete";
 
             HttpClient client;
@@ -165,7 +167,7 @@ public class RemoveResourceCommand extends BaseSolrCommand implements SolrComman
 
             jsonID.put(jsonObj);
 
-            dataObj.put("en", jsonID);
+            dataObj.put(core, jsonID);
 
             NameValuePair[] data = new NameValuePair[] { new NameValuePair("delete", dataObj.toString()) };
 

@@ -24,9 +24,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="com.st.olm.cq.st-com.bundles.api" />
-        <module name="com.st.olm.cq.st-com.bundles.services" />
-        <module name="com.st.olm.cq.st-com.wrappers.noggit" />
+        <module name="com.sixd.olm.cq.solr-test-com.bundles.api" />
+        <module name="com.sixd.olm.cq.solr-test-com.bundles.services" />
+        <module name="com.sixd.olm.cq.solr-test-com.wrappers.noggit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

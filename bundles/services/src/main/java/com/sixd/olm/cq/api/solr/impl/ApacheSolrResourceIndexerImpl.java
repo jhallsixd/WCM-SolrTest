@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-import com.sixd.olm.cq.sling.models.solr.SolrFragment;
 import com.sixd.olm.cq.sling.models.solr.SolrPage;
-import com.sixd.olm.cq.sling.models.solr.SolrResource;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.commons.json.JSONArray;
@@ -32,7 +30,6 @@ public class ApacheSolrResourceIndexerImpl implements ApacheSolrResourceIndexer 
     private String resourceType;
     private SolrInputDocument solrDoc;
     private Boolean isDoc;
-    private SolrResource fileResource;
 
     public SolrInputDocument index(Resource res, String type) throws IOException, SolrServerException {
 
@@ -47,19 +44,6 @@ public class ApacheSolrResourceIndexerImpl implements ApacheSolrResourceIndexer 
                 SolrPage indexResource = null;
                 indexResource = this.resource.adaptTo(SolrPage.class);
                 this.solrDoc = indexResource.getSolrDoc();
-            }
-
-            if (resourceType.toLowerCase().equals("st-ccc/components/pages/fragment")) {
-                SolrFragment indexResource = null;
-                indexResource = this.resource.adaptTo(SolrFragment.class);
-                this.solrDoc = indexResource.getSolrDoc();
-            }
-
-            if (resourceType.toLowerCase().equals("st-ccc/components/pages/resource")) {
-                SolrResource indexResource = null;
-                indexResource = this.resource.adaptTo(SolrResource.class);
-                this.solrDoc = indexResource.getSolrDoc();
-                this.isDoc = indexResource.isDocument;
             }
 
         } catch (Exception e) {
@@ -82,21 +66,9 @@ public class ApacheSolrResourceIndexerImpl implements ApacheSolrResourceIndexer 
 
         try {
 
-            if (resourceType.toLowerCase().equals("st-site/components/pages/base")) {
+            if (resourceType.toLowerCase().equals("solr/components/pages/base")) {
                 SolrPage indexResource = this.resource.adaptTo(SolrPage.class);
                 fields = indexResource.getFields();
-            }
-
-            if (resourceType.toLowerCase().equals("st-ccc/components/pages/fragment")) {
-                SolrFragment indexResource = this.resource.adaptTo(SolrFragment.class);
-                fields = indexResource.getFields();
-            }
-
-            if (resourceType.toLowerCase().equals("st-ccc/components/pages/resource")) {
-                SolrResource indexResource = this.resource.adaptTo(SolrResource.class);
-                fields = indexResource.getFields();
-                this.isDoc = indexResource.isDocument;
-                this.fileResource = indexResource;
             }
 
         } catch (Exception e) {
@@ -130,31 +102,6 @@ public class ApacheSolrResourceIndexerImpl implements ApacheSolrResourceIndexer 
 
     public Boolean isDocument() {
         return this.isDoc;
-    }
-
-    public String getFilesAttributes() {
-        String attrStr = "";
-        try {
-            attrStr = this.fileResource.getFileAttributes().toString();
-        } catch (Exception e) {
-            log.error("ApacheSolrResourceIndexerImpl.convert exception", e);
-        }
-        return attrStr;
-    }
-
-    public InputStream getFileIS() {
-        InputStream is = this.fileResource.getFileIS();
-        return is;
-    }
-
-    public String getFileContentType() {
-        String contentType = this.fileResource.getFileContentType();
-        return contentType;
-    }
-
-    public String getFileName() {
-        String fileName = this.fileResource.getFileName();
-        return fileName;
     }
 
 }
