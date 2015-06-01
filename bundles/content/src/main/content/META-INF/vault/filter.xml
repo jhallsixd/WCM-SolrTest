@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/st-site">
+        <!-- do not overwrite this, so it is excluded -->
+        <exclude pattern="/apps/st-site/i18n/en/(.*?)"/>
+        <exclude pattern="/apps/st-site/i18n/ja/(.*?)"/>
+        <exclude pattern="/apps/st-site/i18n/zh/(.*?)"/>
+    </filter>
+    <filter root="/apps/st-ccc"/>
+    <filter root="/apps/st-admin"/>
+    <filter root="/apps/sling/config" mode="merge"/>
+    <filter root="/apps/sling/servlet" mode="replace"/>
+    <filter root="/etc/languages"/>
+    <filter root="/etc/designs/st-site">
+        <!-- do not overwrite this, so it is excluded -->
+        <exclude pattern="/etc/designs/st-site/jcr:content.*"/>
+    </filter>
+    <filter root="/etc/importers/st-company-importer" />
+    <filter root="/etc/importers/st-vertical-channel-importer" />
+    <filter root="/etc/tags/ccc"/>
+    <filter root="/etc/tags/ccc-resources"/>
+    <filter root="/etc/tags/plevel"/>
+    <filter root="/etc/stconfig" mode="merge"/>
+    <filter root="/etc/clientlibs/modernizr"/>
+    <filter root="/etc/clientlibs/edesign"/>
+    <filter root="/etc/clientlibs/st-ccc"/>
+    <filter root="/etc/clientlibs/bower"/>
+    <filter root="/etc/clientlibs/st-site"/>
+    <filter root="/etc/workflow/models" mode="merge"/>
+    <filter root="/etc/workflow/launcher" mode="merge"/>
+    <filter root="/etc/notification/email/st"/>
+</workspaceFilter>

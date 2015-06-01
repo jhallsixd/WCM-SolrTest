@@ -10,7 +10,6 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>ws</module>
 		<module>api</module>
 		<module>services</module>
 	</modules>

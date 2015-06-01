@@ -468,36 +468,10 @@
 	<build>
 		<plugins>
 
-			<!-- Using jGitFlow for releases -->
-			<plugin>
-				<groupId>external.atlassian.jgitflow</groupId>
-				<artifactId>jgitflow-maven-plugin</artifactId>
-				<version>1.0-m2</version>
-				<configuration>
-					<masterBranchName>master</masterBranchName>
-					<developBranchName>legacy</developBranchName>
-					<versionTagPrefix>${project.artifactId}-</versionTagPrefix>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
-					<pushReleases>true</pushReleases>
-				</configuration>
-			</plugin>
+
 		</plugins>
 		<pluginManagement>
 			<plugins>
-
-				<!-- Using jGitFlow for releases -->
-				<plugin>
-					<groupId>com.atlassian.maven.plugins</groupId>
-					<artifactId>jgitflow-maven-plugin</artifactId>
-					<version>1.0-m2</version>
-					<configuration>
-						<masterBranchName>master</masterBranchName>
-						<developBranchName>legacy</developBranchName>
-						<versionTagPrefix>${project.artifactId}-</versionTagPrefix>
-						<autoVersionSubmodules>true</autoVersionSubmodules>
-						<pushReleases>true</pushReleases>
-					</configuration>
-				</plugin>
 
 				<plugin>
 					<groupId>org.apache.felix</groupId>
@@ -623,7 +597,7 @@
 					<configuration>
 						<username>${crx.username}</username>
 						<password>${crx.password}</password>
-						<slingUrl>http://${crx.host}:${crx.port}/apps/solr-test-site/install</slingUrl>
+						<slingUrl>http://${crx.host}:${crx.port}/apps/solr-test-com/install</slingUrl>
 						<usePut>true</usePut>
 					</configuration>
 				</plugin>
@@ -701,46 +675,6 @@
 							</executions>
 						</plugin>
 
-						<!-- Generate Checkstyle Reports -->
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-checkstyle-plugin</artifactId>
-							<version>2.9.1</version>
-							<configuration>
-								<configLocation>${project.parent.parent.basedir}/checkstyle.xml</configLocation>
-							</configuration>
-							<executions>
-								<execution>
-									<id>checkstyle</id>
-									<phase>verify</phase>
-									<goals>
-										<goal>checkstyle</goal>
-									</goals>
-								</execution>
-							</executions>
-						</plugin>
-
-						<!-- Generate Findbugs Report -->
-						<plugin>
-							<groupId>org.codehaus.mojo</groupId>
-							<artifactId>findbugs-maven-plugin</artifactId>
-							<version>2.4.0</version>
-							<executions>
-								<execution>
-									<id>findbugs</id>
-									<phase>verify</phase>
-									<goals>
-										<goal>findbugs</goal>
-									</goals>
-								</execution>
-							</executions>
-							<configuration>
-								<findbugsXmlOutput>true</findbugsXmlOutput>
-								<findbugsXmlWithMessages>true</findbugsXmlWithMessages>
-								<xmlOutput>true</xmlOutput>
-							</configuration>
-						</plugin>
-
 					</plugins>
 				</pluginManagement>
 			</build>
@@ -751,10 +685,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <modules>
-                <module>wrappers</module>
                 <module>bundles</module>
-                <module>content</module>
-                <module>integration-tests</module>
             </modules>
         </profile>
 		<profile>
@@ -769,35 +700,6 @@
 								<id>install-bundle</id>
 								<goals>
 									<goal>install</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-        <profile>
-            <id>install-index</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <modules>
-                <module>index</module>
-            </modules>
-        </profile>
-		<profile>
-			<id>run-integration-tests</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-failsafe-plugin</artifactId>
-						<version>2.17</version>
-						<executions>
-							<execution>
-								<id>integration-test</id>
-								<goals>
-									<goal>integration-test</goal>
 								</goals>
 							</execution>
 						</executions>

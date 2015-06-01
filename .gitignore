@@ -1,0 +1,31 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+# Eclipse Files
+.project
+.classpath
+.settings/
+
+# Maven Files
+target/
+bin/
+
+# IntelliJ Files
+*.iml
+.idea/
+
+# SVN
+.svn/
+
+# Local interim script config
+scripts/interim-publication/config
+
+#Sightly config files
+content/src/main/content/.brackets.json
+
+# Tmp file for content-load verifications
+scripts/content-load/tmp*
+
+# Tmp file for content-load verifications
+scripts/extranet-alignment/*.tar.gz

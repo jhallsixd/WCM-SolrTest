@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/bundles/services/src/main/java/com/com.iml" filepath="$PROJECT_DIR$/bundles/services/src/main/java/com/com.iml" />
-      <module fileurl="file://$PROJECT_DIR$/com.sixd.olm.cq.solr-test-com.iml" filepath="$PROJECT_DIR$/com.sixd.olm.cq.solr-test-com.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bundles/api/src/main/main.iml" filepath="$PROJECT_DIR$/bundles/api/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bundles/api/src/test/test.iml" filepath="$PROJECT_DIR$/bundles/api/src/test/test.iml" />
+    	<module fileurl="file://$PROJECT_DIR$/com.sixd.olm.cq.solr-test-com.iml" filepath="$PROJECT_DIR$/com.sixd.olm.cq.solr-test-com.iml" />
+    	<module fileurl="file://$PROJECT_DIR$/bundles/com.sixd.olm.cq.solr-test-com.bundles.iml" filepath="$PROJECT_DIR$/bundles/com.sixd.olm.cq.solr-test-com.bundles.iml" />
+      	<module fileurl="file://$PROJECT_DIR$/bundles/api/com.sixd.olm.cq.solr-test-com.bundles.api.iml" filepath="$PROJECT_DIR$/bundles/api/com.sixd.olm.cq.solr-test-com.bundles.api.iml" />
+      	<module fileurl="file://$PROJECT_DIR$/bundles/services/com.sixd.olm.cq.solr-test-com.bundles.services.iml" filepath="$PROJECT_DIR$/bundles/services/com.sixd.olm.cq.solr-test-com.bundles.services.iml" />
+      	<module fileurl="file://$PROJECT_DIR$/wrappers/noggit/com.sixd.olm.cq.solr-test-com.wrappers.noggit.iml" filepath="$PROJECT_DIR$/wrappers/noggit/com.sixd.olm.cq.solr-test-com.wrappers.noggit.iml" />
     </modules>
   </component>
 </project>
