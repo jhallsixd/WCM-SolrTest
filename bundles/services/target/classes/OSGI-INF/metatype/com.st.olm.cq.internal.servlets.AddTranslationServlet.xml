@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.st.olm.cq.internal.servlets.AddTranslationServlet">
-    <OCD id="com.st.olm.cq.st-com.bundles.services.AddTranslationServlet" name="%com.st.olm.cq.st-com.bundles.services.AddTranslationServlet.name" description="%com.st.olm.cq.st-com.bundles.services.AddTranslationServlet.description"/>
-    <Designate pid="com.st.olm.cq.st-com.bundles.services.AddTranslationServlet">
-        <Object ocdref="com.st.olm.cq.st-com.bundles.services.AddTranslationServlet"/>
-    </Designate>
-</metatype:MetaData>

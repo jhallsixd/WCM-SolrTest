@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration">
-    <OCD id="com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration" name="%com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration.name" description="%com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration.description">
-        <AD id="apachesolr.handler.dev.settings" type="String" default="environment=http://localhost,port=8983,path=solr,contentURL=http://www.st.com,service=service,status=enabled" name="%com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration.apachesolr.handler.dev.settings.name" description="%com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration.apachesolr.handler.dev.settings.description" cardinality="2147483647"/>
-        <AD id="apachesolr.config.environment.settings" type="String" default="environment=dev,status=enabled" name="%com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration.apachesolr.config.environment.settings.name" description="%com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration.apachesolr.config.environment.settings.description" cardinality="2147483647"/>
-    </OCD>
-    <Designate pid="com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration">
-        <Object ocdref="com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration"/>
-    </Designate>
-</metatype:MetaData>

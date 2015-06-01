@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
-    <scr:component name="com.st.olm.cq.internal.servlets.helpers.VersionPredicate" factory="com.day.cq.search.eval.PredicateEvaluator/version">
-        <implementation class="com.st.olm.cq.internal.servlets.helpers.VersionPredicate"/>
-        <property name="service.pid" value="com.st.olm.cq.internal.servlets.helpers.VersionPredicate"/>
-    </scr:component>
-</components>
