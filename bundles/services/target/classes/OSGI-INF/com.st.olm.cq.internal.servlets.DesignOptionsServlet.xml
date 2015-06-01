@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.st.olm.cq.st_com.impl.servlets.DesignOptionsServlet">
+        <implementation class="com.st.olm.cq.internal.servlets.DesignOptionsServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths">
+            /bin/st/design-options
+        </property>
+        <property name="sling.servlet.methods">
+            GET
+        </property>
+        <property name="service.pid" value="com.st.olm.cq.st_com.impl.servlets.DesignOptionsServlet"/>
+    </scr:component>
+</components>

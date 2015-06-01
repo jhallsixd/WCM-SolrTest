@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="IntraRefData" targetNamespace="http://www.st.com/refData"
+	xmlns:ns1="http://jaxb.dev.java.net/array" xmlns:ns2="http://schemas.xmlsoap.org/soap/http"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.st.com/refData"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<wsdl:types>
+		<xs:schema attributeFormDefault="unqualified"
+			elementFormDefault="unqualified" targetNamespace="http://www.st.com/refData"
+			xmlns:tns="http://www.st.com/refData" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+			<xs:complexType name="companyTSData">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="authEmailList" nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="classification" type="xs:string" />
+					<xs:element minOccurs="0" name="customerFocusFlag" type="xs:string" />
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="departments" nillable="true" type="tns:departmentTSData" />
+					<xs:element name="enableForPersonalization" type="xs:boolean" />
+					<xs:element minOccurs="0" name="groupName" type="xs:string" />
+					<xs:element minOccurs="0" name="id" type="xs:string" />
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="industryCompSegmentTSData" nillable="true"
+						type="tns:industryCompSegmentTSData" />
+					<xs:element minOccurs="0" name="lastUpdDate" type="xs:string" />
+					<xs:element minOccurs="0" name="name" type="xs:string" />
+					<xs:element name="ndaEnable" type="xs:boolean" />
+					<xs:element minOccurs="0" name="portalAccess" type="xs:string" />
+					<xs:element minOccurs="0" name="portalGroupName" type="xs:string" />
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="regiongroups" nillable="true" type="tns:companyRegionGroupTSData" />
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="salesCoverageList" nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="departmentTSData">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="adGroupName" type="xs:string" />
+					<xs:element minOccurs="0" name="classification" type="xs:string" />
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="deptRegionGroups" nillable="true"
+						type="tns:companyDeptRegionGroupTSData" />
+					<xs:element minOccurs="0" name="displayName" type="xs:string" />
+					<xs:element minOccurs="0" name="name" type="xs:string" />
+					<xs:element minOccurs="0" name="portalAccess" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="companyDeptRegionGroupTSData">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="displayName" type="xs:string" />
+					<xs:element minOccurs="0" name="regionAdGroupName" type="xs:string" />
+					<xs:element minOccurs="0" name="regionCode" type="xs:string" />
+					<xs:element minOccurs="0" name="regionDescription" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="industryCompSegmentTSData">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="displayName" type="xs:string" />
+					<xs:element minOccurs="0" name="id" type="xs:string" />
+					<xs:element minOccurs="0" name="name" type="xs:string" />
+					<xs:element minOccurs="0" name="verticalAdGroupName"
+						type="xs:string" />
+					<xs:element name="visible" type="xs:boolean" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="companyRegionGroupTSData">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="displayName" type="xs:string" />
+					<xs:element minOccurs="0" name="regionAdGroupName" type="xs:string" />
+					<xs:element minOccurs="0" name="regionCode" type="xs:string" />
+					<xs:element minOccurs="0" name="regionDescription" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="industrySegment">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="id" type="xs:string" />
+					<xs:element minOccurs="0" name="name" type="xs:string" />
+					<xs:element minOccurs="0" name="verticalAdGroupName"
+						type="xs:string" />
+					<xs:element name="visible" type="xs:boolean" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="companyTSDataNew">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="authEmailList" nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="bpType" type="xs:string" />
+					<xs:element minOccurs="0" name="classification" type="xs:string" />
+					<xs:element minOccurs="0" name="customerFocusFlag" type="xs:string" />
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="departments" nillable="true" type="tns:departmentTSData" />
+					<xs:element name="enableForPersonalization" type="xs:boolean" />
+					<xs:element minOccurs="0" name="groupName" type="xs:string" />
+					<xs:element minOccurs="0" name="id" type="xs:string" />
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="industryCompSegmentTSData" nillable="true"
+						type="tns:industryCompSegmentTSData" />
+					<xs:element minOccurs="0" name="lastUpdDate" type="xs:string" />
+					<xs:element minOccurs="0" name="name" type="xs:string" />
+					<xs:element name="ndaEnable" type="xs:boolean" />
+					<xs:element minOccurs="0" name="portalAccess" type="xs:string" />
+					<xs:element minOccurs="0" name="portalGroupName" type="xs:string" />
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="regiongroups" nillable="true" type="tns:companyRegionGroupTSData" />
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="salesCoverageList" nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="portal">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="groupName" type="xs:string" />
+					<xs:element minOccurs="0" name="name" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="applicationImpl">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="accessLevel" type="xs:string" />
+					<xs:element minOccurs="0" name="adCode" type="xs:string" />
+					<xs:element maxOccurs="unbounded" minOccurs="0"
+						name="allowedRoles" nillable="true" type="tns:role" />
+					<xs:element minOccurs="0" name="code" type="xs:string" />
+					<xs:element minOccurs="0" name="description" type="xs:string" />
+					<xs:element minOccurs="0" name="jointVentureCode" type="xs:string" />
+					<xs:element minOccurs="0" name="notes" type="xs:string" />
+					<xs:element minOccurs="0" name="remedyCTI" type="tns:cti" />
+					<xs:element minOccurs="0" name="url" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="role">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="appXRoleId" type="xs:string" />
+					<xs:element minOccurs="0" name="code" type="xs:string" />
+					<xs:element minOccurs="0" name="genRemTkt" type="xs:string" />
+					<xs:element minOccurs="0" name="name" type="xs:string" />
+					<xs:element minOccurs="0" name="peremiters" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="cti">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="category" type="xs:string" />
+					<xs:element minOccurs="0" name="item" type="xs:string" />
+					<xs:element minOccurs="0" name="type" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType final="#all" name="companyTSDataArray">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="item"
+						nillable="true" type="tns:companyTSData" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType final="#all" name="industrySegmentArray">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="item"
+						nillable="true" type="tns:industrySegment" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType final="#all" name="companyTSDataNewArray">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="item"
+						nillable="true" type="tns:companyTSDataNew" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType final="#all" name="portalArray">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="item"
+						nillable="true" type="tns:portal" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType final="#all" name="applicationImplArray">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="item"
+						nillable="true" type="tns:applicationImpl" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="IPWSException" type="tns:IPWSException" />
+			<xs:complexType name="IPWSException">
+				<xs:sequence />
+			</xs:complexType>
+		</xs:schema>
+		<xs:schema targetNamespace="http://jaxb.dev.java.net/array"
+			version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+			<xs:complexType final="#all" name="stringArray">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="item"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message name="getApplicationURLs">
+		<wsdl:part name="parentCompOrgCode" type="xsd:string">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getExtranetClassifications">
+	</wsdl:message>
+	<wsdl:message name="getExtranetCompanies_newResponse">
+		<wsdl:part name="return" type="tns:companyTSDataArray">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getExtranetPortalsResponse">
+		<wsdl:part name="return" type="tns:portalArray">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getExtranetCompanies_WithBPType">
+		<wsdl:part name="parentCompOrgCode" type="xsd:string">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getExtranetPortals">
+		<wsdl:part name="parentCompOrgCode" type="xsd:string">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getExtranetCompanies">
+		<wsdl:part name="parentCompOrgCode" type="xsd:string">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="IPWSException">
+		<wsdl:part element="tns:IPWSException" name="IPWSException">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getIndustriesSegements">
+	</wsdl:message>
+	<wsdl:message name="getExtranetCompanies_WithBPTypeResponse">
+		<wsdl:part name="return" type="tns:companyTSDataNewArray">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getApplicationURLsResponse">
+		<wsdl:part name="return" type="tns:applicationImplArray">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getIndustriesSegementsResponse">
+		<wsdl:part name="return" type="tns:industrySegmentArray">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getExtranetCompanies_new">
+		<wsdl:part name="parentCompOrgCode" type="xsd:string">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getExtranetClassificationsResponse">
+		<wsdl:part name="return" type="ns1:stringArray">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getExtranetCompaniesResponse">
+		<wsdl:part name="return" type="tns:companyTSDataArray">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="RefDataWebServiceHandler">
+		<wsdl:operation name="getExtranetClassifications">
+			<wsdl:input message="tns:getExtranetClassifications" name="getExtranetClassifications">
+			</wsdl:input>
+			<wsdl:output message="tns:getExtranetClassificationsResponse"
+				name="getExtranetClassificationsResponse">
+			</wsdl:output>
+			<wsdl:fault message="tns:IPWSException" name="IPWSException">
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getExtranetCompanies">
+			<wsdl:input message="tns:getExtranetCompanies" name="getExtranetCompanies">
+			</wsdl:input>
+			<wsdl:output message="tns:getExtranetCompaniesResponse"
+				name="getExtranetCompaniesResponse">
+			</wsdl:output>
+			<wsdl:fault message="tns:IPWSException" name="IPWSException">
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getIndustriesSegements">
+			<wsdl:input message="tns:getIndustriesSegements" name="getIndustriesSegements">
+			</wsdl:input>
+			<wsdl:output message="tns:getIndustriesSegementsResponse"
+				name="getIndustriesSegementsResponse">
+			</wsdl:output>
+			<wsdl:fault message="tns:IPWSException" name="IPWSException">
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getExtranetCompanies_WithBPType">
+			<wsdl:input message="tns:getExtranetCompanies_WithBPType"
+				name="getExtranetCompanies_WithBPType">
+			</wsdl:input>
+			<wsdl:output message="tns:getExtranetCompanies_WithBPTypeResponse"
+				name="getExtranetCompanies_WithBPTypeResponse">
+			</wsdl:output>
+			<wsdl:fault message="tns:IPWSException" name="IPWSException">
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getExtranetCompanies_new">
+			<wsdl:input message="tns:getExtranetCompanies_new" name="getExtranetCompanies_new">
+			</wsdl:input>
+			<wsdl:output message="tns:getExtranetCompanies_newResponse"
+				name="getExtranetCompanies_newResponse">
+			</wsdl:output>
+			<wsdl:fault message="tns:IPWSException" name="IPWSException">
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getExtranetPortals">
+			<wsdl:input message="tns:getExtranetPortals" name="getExtranetPortals">
+			</wsdl:input>
+			<wsdl:output message="tns:getExtranetPortalsResponse"
+				name="getExtranetPortalsResponse">
+			</wsdl:output>
+			<wsdl:fault message="tns:IPWSException" name="IPWSException">
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getApplicationURLs">
+			<wsdl:input message="tns:getApplicationURLs" name="getApplicationURLs">
+			</wsdl:input>
+			<wsdl:output message="tns:getApplicationURLsResponse"
+				name="getApplicationURLsResponse">
+			</wsdl:output>
+			<wsdl:fault message="tns:IPWSException" name="IPWSException">
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="IntraRefDataSoapBinding" type="tns:RefDataWebServiceHandler">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="getExtranetClassifications">
+			<soap:operation soapAction="" style="rpc" />
+			<wsdl:input name="getExtranetClassifications">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:input>
+			<wsdl:output name="getExtranetClassificationsResponse">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="IPWSException">
+				<soap:fault name="IPWSException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getExtranetCompanies">
+			<soap:operation soapAction="" style="rpc" />
+			<wsdl:input name="getExtranetCompanies">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:input>
+			<wsdl:output name="getExtranetCompaniesResponse">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="IPWSException">
+				<soap:fault name="IPWSException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getIndustriesSegements">
+			<soap:operation soapAction="" style="rpc" />
+			<wsdl:input name="getIndustriesSegements">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:input>
+			<wsdl:output name="getIndustriesSegementsResponse">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="IPWSException">
+				<soap:fault name="IPWSException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getExtranetCompanies_WithBPType">
+			<soap:operation soapAction="" style="rpc" />
+			<wsdl:input name="getExtranetCompanies_WithBPType">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:input>
+			<wsdl:output name="getExtranetCompanies_WithBPTypeResponse">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="IPWSException">
+				<soap:fault name="IPWSException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getExtranetCompanies_new">
+			<soap:operation soapAction="" style="rpc" />
+			<wsdl:input name="getExtranetCompanies_new">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:input>
+			<wsdl:output name="getExtranetCompanies_newResponse">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="IPWSException">
+				<soap:fault name="IPWSException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getExtranetPortals">
+			<soap:operation soapAction="" style="rpc" />
+			<wsdl:input name="getExtranetPortals">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:input>
+			<wsdl:output name="getExtranetPortalsResponse">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="IPWSException">
+				<soap:fault name="IPWSException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="getApplicationURLs">
+			<soap:operation soapAction="" style="rpc" />
+			<wsdl:input name="getApplicationURLs">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:input>
+			<wsdl:output name="getApplicationURLsResponse">
+				<soap:body namespace="http://www.st.com/refData" use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="IPWSException">
+				<soap:fault name="IPWSException" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="IntraRefData">
+		<wsdl:port binding="tns:IntraRefDataSoapBinding" name="RefDataWebServiceHandlerPort">
+			<soap:address location="http://eul251.sgp.st.com:10080/ip/refdataws" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

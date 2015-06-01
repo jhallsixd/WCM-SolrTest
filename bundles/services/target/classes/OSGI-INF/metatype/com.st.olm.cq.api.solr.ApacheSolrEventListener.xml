@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.st.olm.cq.api.solr.ApacheSolrEventListener">
+    <OCD id="com.st.olm.cq.api.solr.ApacheSolrEventListener" name="%com.st.olm.cq.api.solr.ApacheSolrEventListener.name" description="%com.st.olm.cq.api.solr.ApacheSolrEventListener.description">
+        <AD id="enabled" type="Boolean" default="false" name="%com.st.olm.cq.api.solr.ApacheSolrEventListener.enabled.name" description="%com.st.olm.cq.api.solr.ApacheSolrEventListener.enabled.description"/>
+    </OCD>
+    <Designate pid="com.st.olm.cq.api.solr.ApacheSolrEventListener">
+        <Object ocdref="com.st.olm.cq.api.solr.ApacheSolrEventListener"/>
+    </Designate>
+</metatype:MetaData>

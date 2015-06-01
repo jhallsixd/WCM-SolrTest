@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.st.olm.cq.config.StaticConfigListener">
+    <OCD id="com.st.olm.cq.config.StaticConfigListener" name="%com.st.olm.cq.config.StaticConfigListener.name" description="%com.st.olm.cq.config.StaticConfigListener.description">
+        <AD id="event.topics" type="String" default="org/apache/sling/api/resource/Resource/ADDED,org/apache/sling/api/resource/Resource/CHANGED,org/apache/sling/api/resource/Resource/REMOVED" name="%com.st.olm.cq.config.StaticConfigListener.event.topics.name" description="%com.st.olm.cq.config.StaticConfigListener.event.topics.description" cardinality="2147483647"/>
+        <AD id="event.filter" type="String" default="(path=/etc/stconfig/*)" name="%com.st.olm.cq.config.StaticConfigListener.event.filter.name" description="%com.st.olm.cq.config.StaticConfigListener.event.filter.description"/>
+    </OCD>
+    <Designate pid="com.st.olm.cq.config.StaticConfigListener">
+        <Object ocdref="com.st.olm.cq.config.StaticConfigListener"/>
+    </Designate>
+</metatype:MetaData>

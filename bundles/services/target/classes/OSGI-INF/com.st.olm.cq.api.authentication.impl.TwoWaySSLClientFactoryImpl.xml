@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="com.st.olm.cq.api.authentication.impl.TwoWaySSLClientFactoryImpl" activate="activate">
+        <implementation class="com.st.olm.cq.api.authentication.impl.TwoWaySSLClientFactoryImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.st.olm.cq.api.authentication.TwoWaySSLClientFactory"/>
+        </service>
+        <property name="keyStoreFileUri" value="file:///usr/java/jdk1.7.0_45/jre/lib/security/keystore.jks"/>
+        <property name="keyStorePassword" value="olmextranet"/>
+        <property name="trustStoreFileUri" value="file:///usr/java/jdk1.7.0_45/jre/lib/security/cacerts"/>
+        <property name="trustStorePassword" value="changeit"/>
+        <property name="getRequestStatusEndPoint" value="https://api.st.com:9443/prmis/service/vs_olm_getRequestStatus/invoke"/>
+        <property name="createRequestEndpoint" value="https://api.st.com:9443/prmis/service/vs_olm_createRequest/invoke"/>
+        <property name="service.pid" value="com.st.olm.cq.api.authentication.impl.TwoWaySSLClientFactoryImpl"/>
+    </scr:component>
+</components>

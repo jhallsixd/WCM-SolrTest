@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl">
+    <OCD id="com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl" name="%com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl.name" description="%com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl.description">
+        <AD id="provider.roots" type="String" default="/content/st/en/products,/content/st/en/applications" name="%com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl.provider.roots.name" description="%com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl.provider.roots.description" cardinality="1"/>
+        <AD id="root.mappings" type="String" default="/content/st/en/products=FM,/content/st/en/applications=SE,/content/st/en/newtree=TP" name="%com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl.root.mappings.name" description="%com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl.root.mappings.description" cardinality="1"/>
+    </OCD>
+    <Designate pid="com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl">
+        <Object ocdref="com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl"/>
+    </Designate>
+</metatype:MetaData>

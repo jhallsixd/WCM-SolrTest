@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.st.olm.cq.events.handler.ReplicationEventHandler">
+        <implementation class="com.st.olm.cq.events.handler.ReplicationEventHandler"/>
+        <service servicefactory="false">
+            <provide interface="org.osgi.service.event.EventHandler"/>
+        </service>
+        <property name="event.topics" value="com/day/cq/replication"/>
+        <property name="service.pid" value="com.st.olm.cq.events.handler.ReplicationEventHandler"/>
+        <reference name="workflowService" interface="com.day.cq.workflow.WorkflowService" cardinality="1..1" policy="static" bind="bindWorkflowService" unbind="unbindWorkflowService"/>
+        <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResolverFactory" unbind="unbindResolverFactory"/>
+    </scr:component>
+</components>

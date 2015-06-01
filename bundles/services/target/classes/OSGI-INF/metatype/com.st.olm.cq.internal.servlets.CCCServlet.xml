@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.st.olm.cq.internal.servlets.CCCServlet">
+    <OCD id="com.st.olm.cq.internal.servlets.CCCServlet" name="%com.st.olm.cq.internal.servlets.CCCServlet.name" description="%com.st.olm.cq.internal.servlets.CCCServlet.description"/>
+    <Designate pid="com.st.olm.cq.internal.servlets.CCCServlet">
+        <Object ocdref="com.st.olm.cq.internal.servlets.CCCServlet"/>
+    </Designate>
+</metatype:MetaData>

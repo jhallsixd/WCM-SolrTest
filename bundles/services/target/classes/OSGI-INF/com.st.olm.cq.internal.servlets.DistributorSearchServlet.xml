@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.st.olm.cq.st_com.impl.servlets.DistributorSearchServlet">
+        <implementation class="com.st.olm.cq.internal.servlets.DistributorSearchServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths">
+            /bin/st/distributor-search
+        </property>
+        <property name="sling.servlet.methods">
+            GET
+        </property>
+        <property name="service.pid" value="com.st.olm.cq.st_com.impl.servlets.DistributorSearchServlet"/>
+        <reference name="managerFactory" interface="com.st.olm.cq.api.distributors.STDistributorManagerFactory" cardinality="1..1" policy="static" bind="bindManagerFactory" unbind="unbindManagerFactory"/>
+    </scr:component>
+</components>

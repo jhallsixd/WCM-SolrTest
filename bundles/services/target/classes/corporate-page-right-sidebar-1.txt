@@ -1,0 +1,1 @@
+<div class="sidebar"><%@include file="/WEB-INF/jsp/component/boxHolder.jsp"%></div>

@@ -1,0 +1,18 @@
+<div class="sidebar">
+    <%@include file="/WEB-INF/jsp/component/servicesInclude.jsp"%>
+    <div class="box-holder">
+        <div class="box">
+            <div class="items-holder">
+                <div class="items-frame">
+                    <%@include file="/WEB-INF/jsp/component/blogs.jsp"%>
+                    <%@include file="/WEB-INF/jsp/component/ecom.jsp"%>
+                    <%@include file="/WEB-INF/jsp/component/seminars.jsp"%>
+                    <%@include file="/WEB-INF/jsp/component/highlightedProducts.jsp"%>
+                    <%@include file="/WEB-INF/jsp/component/highlightedApps.jsp"%>
+                    <%@include file="/WEB-INF/jsp/component/featuredVideos.jsp"%>
+                </div>
+            </div>
+        </div>
+        <%@include file="/WEB-INF/jsp/component/specialOffers.jsp"%>
+    </div>
+</div>

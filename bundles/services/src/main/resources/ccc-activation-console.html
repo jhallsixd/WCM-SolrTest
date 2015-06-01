@@ -1,0 +1,53 @@
+<table class="content" width="100%" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr>
+        <th class="content ui-state-default">
+            CCC Activation
+        </th>
+    </tr>
+    </tbody>
+</table>
+
+<table class="content" width="100%" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr>
+        <td class="content" colspan="1">
+            <form method="get">
+                <div class="wrapper">
+                    <label for="taxonomies">Taxonomies</label><br/>
+                    <input style="width:500px;" type="text" required="required" name="taxonomies"/><br/><br/>
+                </div>
+                <button class="add_field">Add More Taxonomies</button>
+                <br/><br/>
+                <label for="count">Count</label>
+                <input type="number" min="0" name="count"/><br/><br/>
+                <label for="sleepDelay">Sleep Delay(seconds)</label>
+                <input type="number" min="0" name="sleepDelay"/><br/><br/>
+                <br/><br/><br/>
+                <input type="hidden" name="action" value="activateassets"/>
+                <input type="submit" value="Activate assets without associations"/><br/><br/>
+                Activated Resources:<br/><br/> ${activatedResources}
+
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var wrapper = $(".wrapper");
+        var add_button = $(".add_field");
+
+        $(add_button).click(function (e) {
+            e.preventDefault();
+            $(wrapper).append('<div><input style="width:500px;" class="ui-state-default ui-corner-all inputText" type="text" required="required" name="taxonomies"/>' +
+                    '<a href="#" class="remove_field">Remove</a><br/><br/></div>');
+        });
+
+        $(wrapper).on("click", ".remove_field", function (e) {
+            e.preventDefault();
+            $(this).parent('div').remove();
+        })
+    });
+</script>

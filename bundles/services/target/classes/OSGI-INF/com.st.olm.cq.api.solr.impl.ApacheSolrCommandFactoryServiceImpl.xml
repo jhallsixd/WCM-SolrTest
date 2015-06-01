@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.st.olm.cq.api.solr.impl.ApacheSolrCommandFactoryServiceImpl">
+        <implementation class="com.st.olm.cq.api.solr.impl.ApacheSolrCommandFactoryServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.st.olm.cq.api.solr.ApacheSolrCommandFactoryService"/>
+        </service>
+        <property name="service.pid" value="com.st.olm.cq.api.solr.impl.ApacheSolrCommandFactoryServiceImpl"/>
+        <reference name="repository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindRepository" unbind="unbindRepository"/>
+        <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResolverFactory" unbind="unbindResolverFactory"/>
+        <reference name="solrConfig" interface="com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration" cardinality="1..1" policy="static" bind="bindSolrConfig" unbind="unbindSolrConfig"/>
+        <reference name="apacheSolrUtil" interface="com.st.olm.cq.api.solr.ApacheSolrUtil" cardinality="1..1" policy="static" bind="bindApacheSolrUtil" unbind="unbindApacheSolrUtil"/>
+    </scr:component>
+</components>

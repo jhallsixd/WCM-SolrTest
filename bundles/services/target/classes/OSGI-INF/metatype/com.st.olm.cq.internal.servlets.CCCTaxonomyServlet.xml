@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.st.olm.cq.internal.servlets.CCCTaxonomyServlet">
+    <OCD id="com.st.olm.cq.internal.servlets.CCCTaxonomyServlet" name="%com.st.olm.cq.internal.servlets.CCCTaxonomyServlet.name" description="%com.st.olm.cq.internal.servlets.CCCTaxonomyServlet.description"/>
+    <Designate pid="com.st.olm.cq.internal.servlets.CCCTaxonomyServlet">
+        <Object ocdref="com.st.olm.cq.internal.servlets.CCCTaxonomyServlet"/>
+    </Designate>
+</metatype:MetaData>

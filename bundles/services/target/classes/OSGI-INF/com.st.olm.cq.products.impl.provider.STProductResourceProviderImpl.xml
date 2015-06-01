@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl">
+        <implementation class="com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.st.olm.cq.api.products.provider.STProductResourceProvider"/>
+            <provide interface="org.apache.sling.api.resource.ResourceProvider"/>
+        </service>
+        <property name="provider.roots">
+            /content/st/en/products
+            /content/st/en/applications
+        </property>
+        <property name="root.mappings">
+            /content/st/en/products=FM
+            /content/st/en/applications=SE
+            /content/st/en/newtree=TP
+        </property>
+        <property name="service.pid" value="com.st.olm.cq.products.impl.provider.STProductResourceProviderImpl"/>
+        <reference name="factory" interface="com.st.olm.cq.api.products.STProductManagerFactory" cardinality="1..1" policy="static" bind="bindFactory" unbind="unbindFactory"/>
+    </scr:component>
+</components>

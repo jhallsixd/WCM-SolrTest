@@ -1,0 +1,49 @@
+/*
+ * Copyright 2014 - STMicroelectronics
+ * All Rights Reserved
+ */
+<cq = 'http://www.day.com/jcr/cq/1.0'>
+<sling = 'http://sling.apache.org/jcr/sling/1.0'>
+<st = 'http://www.st.com/nt/st'>
+
+/**
+ * Node types for the PRMIS Product / Application Tree
+ */
+[st:prmisItem] > nt:hierarchyNode
+  orderable
+  + jcr:content (cq:PageContent) = cq:PageContent copy primary
+  + st:prmisContent (st:prmisItemContent) = st:prmisItemContent copy
+  + * (nt:base) = nt:base version
+  - st:prmisId (string)
+  - st:realCategoryId (string)
+  - st:itemName (string)
+  - st:parentId (string)
+  - st:type (string)
+  - st:secondaryParentIds (string) multiple
+  - st:nspIds (string) multiple
+  
+[st:prmisItemContent] > nt:unstructured, mix:created
+    orderable
+    
+/**
+ * Node types for the PRMIS Views
+ */
+[st:prmisView] > nt:hierarchyNode
+  orderable
+  + * (st:prmisViewAttribute) = st:prmisViewAttribute copy
+  - st:viewType (string)
+  - st:itemId (string)
+  - st:export  (boolean)
+  
+[st:prmisViewAttribute] > nt:unstructured
+    orderable
+  - id (string)
+  - name (string)
+  - description  (string)
+  - type  (string)
+  - units  (string)
+  - qualifier  (string)
+  - conditional  (string)
+  - order  (long)
+  - show  (boolean)
+  - symbol (string)

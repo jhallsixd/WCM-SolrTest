@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.st.olm.cq.api.solr.SolrIndexWebConsole">
+        <implementation class="com.st.olm.cq.api.solr.SolrIndexWebConsole"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="felix.webconsole.label" value="solrindexing"/>
+        <property name="felix.webconsole.title" value="Solr Indexing"/>
+        <property name="service.pid" value="com.st.olm.cq.api.solr.SolrIndexWebConsole"/>
+        <reference name="solrCommandFactoryService" interface="com.st.olm.cq.api.solr.ApacheSolrCommandFactoryService" cardinality="1..1" policy="static" bind="bindSolrCommandFactoryService" unbind="unbindSolrCommandFactoryService"/>
+        <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResourceResolverFactory" unbind="unbindResourceResolverFactory"/>
+    </scr:component>
+</components>

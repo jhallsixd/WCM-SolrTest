@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.st.olm.cq.workflows.approval.EmailApproversStep">
+        <implementation class="com.st.olm.cq.workflows.approval.EmailApproversStep"/>
+        <service servicefactory="false">
+            <provide interface="com.adobe.granite.workflow.exec.WorkflowProcess"/>
+        </service>
+        <property name="service.description" value="Workflow step for email content approvers"/>
+        <property name="process.label" value="Email Approvers"/>
+        <property name="service.pid" value="com.st.olm.cq.workflows.approval.EmailApproversStep"/>
+        <reference name="emailService" interface="com.adobe.acs.commons.email.EmailService" cardinality="1..1" policy="static" bind="bindEmailService" unbind="unbindEmailService"/>
+        <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResourceResolverFactory" unbind="unbindResourceResolverFactory"/>
+    </scr:component>
+</components>

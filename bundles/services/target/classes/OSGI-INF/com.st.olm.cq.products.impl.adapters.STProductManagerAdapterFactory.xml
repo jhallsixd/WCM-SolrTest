@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.st.olm.cq.products.impl.adapters.STProductManagerAdapterFactory">
+        <implementation class="com.st.olm.cq.products.impl.adapters.STProductManagerAdapterFactory"/>
+        <service servicefactory="false">
+            <provide interface="org.apache.sling.api.adapter.AdapterFactory"/>
+        </service>
+        <property name="adaptables" value="org.apache.sling.api.resource.ResourceResolver"/>
+        <property name="adapters" value="com.st.olm.cq.api.products.STProductManager"/>
+        <property name="service.pid" value="com.st.olm.cq.products.impl.adapters.STProductManagerAdapterFactory"/>
+        <reference name="mgrFactory" interface="com.st.olm.cq.api.products.STProductManagerFactory" cardinality="1..1" policy="static" bind="bindMgrFactory" unbind="unbindMgrFactory"/>
+    </scr:component>
+</components>

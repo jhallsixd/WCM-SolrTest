@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.st.olm.cq.ccc.CCCActivationWebConsole">
+        <implementation class="com.st.olm.cq.ccc.CCCActivationWebConsole"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="felix.webconsole.label" value="cccactivation"/>
+        <property name="felix.webconsole.title" value="CCC Activation"/>
+        <property name="service.pid" value="com.st.olm.cq.ccc.CCCActivationWebConsole"/>
+        <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResourceResolverFactory" unbind="unbindResourceResolverFactory"/>
+        <reference name="replicator" interface="com.day.cq.replication.Replicator" cardinality="1..1" policy="static" bind="bindReplicator" unbind="unbindReplicator"/>
+    </scr:component>
+</components>

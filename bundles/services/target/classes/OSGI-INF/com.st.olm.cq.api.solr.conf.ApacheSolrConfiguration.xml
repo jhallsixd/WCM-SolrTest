@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration" activate="activate">
+        <implementation class="com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration"/>
+        <service servicefactory="false">
+            <provide interface="com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration"/>
+        </service>
+        <property name="apachesolr.handler.dev.settings">
+            environment=http://localhost
+            port=8983
+            path=solr
+            contentURL=http://www.st.com
+            service=service
+            status=enabled
+        </property>
+        <property name="apachesolr.config.environment.settings">
+            environment=dev
+            status=enabled
+        </property>
+        <property name="service.pid" value="com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration"/>
+    </scr:component>
+</components>

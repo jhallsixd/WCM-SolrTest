@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.st.olm.cq.internal.servlets.CCCSetAssociationsServlet">
+    <OCD id="com.st.olm.cq.st-com.bundles.services.CCCSetAssociationsServlet" name="%com.st.olm.cq.st-com.bundles.services.CCCSetAssociationsServlet.name" description="%com.st.olm.cq.st-com.bundles.services.CCCSetAssociationsServlet.description"/>
+    <Designate pid="com.st.olm.cq.st-com.bundles.services.CCCSetAssociationsServlet">
+        <Object ocdref="com.st.olm.cq.st-com.bundles.services.CCCSetAssociationsServlet"/>
+    </Designate>
+</metatype:MetaData>

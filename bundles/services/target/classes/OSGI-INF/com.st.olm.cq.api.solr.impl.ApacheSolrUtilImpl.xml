@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.st.olm.cq.api.solr.impl.ApacheSolrUtilImpl">
+        <implementation class="com.st.olm.cq.api.solr.impl.ApacheSolrUtilImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.st.olm.cq.api.solr.ApacheSolrUtil"/>
+        </service>
+        <property name="service.pid" value="com.st.olm.cq.api.solr.impl.ApacheSolrUtilImpl"/>
+        <reference name="solrConfig" interface="com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration" cardinality="1..1" policy="static" bind="bindSolrConfig" unbind="unbindSolrConfig"/>
+    </scr:component>
+</components>

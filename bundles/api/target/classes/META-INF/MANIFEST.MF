@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1432826899953
+Build-Jdk: 1.8.0_25
+Built-By: jhall
+Bundle-Description: Maven Multimodule project for ST.com.
+Bundle-ManifestVersion: 2
+Bundle-Name: ST.com - Bundles - API
+Bundle-SymbolicName: com.st.olm.cq.st-com.bundles.api
+Bundle-Version: 2.8.14.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.st.olm.cq.api.authentication;uses:="org.apache.commo
+ ns.httpclient";version="2.8.14",com.st.olm.cq.api.aws;version="2.8.14",
+ com.st.olm.cq.api.ccc;uses:="com.day.cq.tagging,com.day.cq.wcm.api,com.
+ st.olm.cq.api.products,org.apache.sling.api.adapter,org.apache.sling.ap
+ i.resource";version="2.8.14",com.st.olm.cq.api.ccc.fragments;uses:="com
+ .st.olm.cq.api.ccc,org.apache.sling.api.resource";version="2.8.14",com.
+ st.olm.cq.api.distributors;uses:="org.apache.sling.api.adapter,org.apac
+ he.sling.api.resource";version="2.8.14",com.st.olm.cq.api.products.prov
+ ider;uses:="org.apache.sling.api.resource";version="2.8.14",com.st.olm.
+ cq.api.products;uses:="com.day.cq.tagging,com.day.cq.wcm.api,com.st.olm
+ .cq.api.ccc,org.apache.sling.api.adapter,org.apache.sling.api.resource"
+ ;version="2.8.14",com.st.olm.cq.api.search;uses:="com.st.olm.cq.api.pro
+ ducts,org.apache.sling.api.resource";version="2.8.14",com.st.olm.cq.api
+ ;version="2.8.14",com.st.olm.cq.api.views;uses:="org.apache.sling.api.a
+ dapter,org.apache.sling.api.resource";version="2.8.14",com.st.olm.cq.ut
+ il;uses:="com.adobe.cq.sightly,com.day.cq.wcm.api,com.st.olm.cq.api.ccc
+ ,org.apache.sling.api.resource,org.joda.time.format";version="2.8.14",o
+ rg.apache.sling.servlets.get.helpers;uses:="org.apache.sling.api.reques
+ t,org.apache.sling.api.resource,org.apache.sling.commons.json";version=
+ "2.8.14"
+Import-Package: com.adobe.cq.sightly;version="[2.2,3)",com.day.cq.common
+ s;version="[5.6,6)",com.day.cq.tagging;version="[5.6,6)",com.day.cq.wcm
+ .api;version="[1.0,2)",com.day.text;version="[1.1,2)",javax.jcr;version
+ ="[2.0,3)",javax.jcr.version;version="[2.0,3)",org.apache.commons.httpc
+ lient;version="[3.1,4)",org.apache.sling.api;version="[2.2,3)",org.apac
+ he.sling.api.adapter;version="[2.2,3)",org.apache.sling.api.request;ver
+ sion="[2.3,3)",org.apache.sling.api.resource;version="[2.3,3)",org.apac
+ he.sling.api.wrappers;version="[2.2,3)",org.apache.sling.commons.json;v
+ ersion="[2.0,3)",org.joda.time;version="[1.6,2)",org.joda.time.format;v
+ ersion="[1.6,2)",org.slf4j;version="[1.6,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Sling-Nodetypes: SLING-INF/nodetypes/st.cnd
+Tool: Bnd-2.3.0.201405100607

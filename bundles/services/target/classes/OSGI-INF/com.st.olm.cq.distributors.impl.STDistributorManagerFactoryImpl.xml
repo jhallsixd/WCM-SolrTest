@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.st.olm.cq.distributors.impl.STDistributorManagerFactoryImpl">
+        <implementation class="com.st.olm.cq.distributors.impl.STDistributorManagerFactoryImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.st.olm.cq.api.distributors.STDistributorManagerFactory"/>
+        </service>
+        <property name="service.pid" value="com.st.olm.cq.distributors.impl.STDistributorManagerFactoryImpl"/>
+    </scr:component>
+</components>
