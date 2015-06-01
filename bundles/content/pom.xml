@@ -29,12 +29,12 @@
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>com.st.olm.cq.st-com.bundles.services</artifactId>
+			<artifactId>com.sixd.olm.cq.solr-test-com.bundles.services</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.st.olm.cq</groupId>
-			<artifactId>com.st.olm.cq.st-com.wrappers.noggit</artifactId>
+			<groupId>com.sixd.olm.cq</groupId>
+			<artifactId>com.sixd.olm.cq.solr-test-com.wrappers.noggit</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
@@ -275,29 +275,6 @@
 				<artifactId>maven-resources-plugin</artifactId>
 				<configuration>
 					<includeEmptyDirs>true</includeEmptyDirs>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>com.google.code.maven-replacer-plugin</groupId>
-				<artifactId>replacer</artifactId>
-				<version>1.5.3</version>
-				<executions>
-					<execution>
-						<phase>prepare-package</phase>
-						<goals>
-							<goal>replace</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<file>${project.build.directory}/classes/apps/st-ccc/content/ccc.xml</file>
-					<replacements>
-						<replacement>
-							<token>BUILD_VERSION</token>
-							<value>${project.version}</value>
-						</replacement>
-					</replacements>
 				</configuration>
 			</plugin>
 

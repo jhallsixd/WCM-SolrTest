@@ -597,7 +597,7 @@
 					<configuration>
 						<username>${crx.username}</username>
 						<password>${crx.password}</password>
-						<slingUrl>http://${crx.host}:${crx.port}/apps/solr-test-com/install</slingUrl>
+						<slingUrl>http://${crx.host}:${crx.port}/apps/solr/install</slingUrl>
 						<usePut>true</usePut>
 					</configuration>
 				</plugin>
