@@ -11,7 +11,6 @@
 
 	<modules>
 		<module>api</module>
-		<module>content</module>
 		<module>services</module>
 	</modules>
 </project>

@@ -686,6 +686,8 @@
             </activation>
             <modules>
                 <module>bundles</module>
+				<module>content</module>
+				<module>wrappers</module>
             </modules>
         </profile>
 		<profile>
