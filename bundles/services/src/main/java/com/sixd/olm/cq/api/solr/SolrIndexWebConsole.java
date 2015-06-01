@@ -1,4 +1,4 @@
-package com.st.olm.cq.api.solr;
+package com.sixd.olm.cq.api.solr;
 
 import com.day.cq.search.PredicateGroup;
 import com.day.cq.search.Query;

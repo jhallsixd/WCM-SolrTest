@@ -1,19 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.st.olm.cq</groupId>
-		<artifactId>com.st.olm.cq.st-com</artifactId>
+		<groupId>com.sixd.olm.cq</groupId>
+		<artifactId>com.sixd.olm.cq.solr-test-com</artifactId>
 		<version>2.8.14-SNAPSHOT</version>
 	</parent>
-	<artifactId>com.st.olm.cq.st-com.bundles</artifactId>
-	<name>ST.com - Bundles</name>
+	<artifactId>com.sixd.olm.cq.solr-test-com.bundles</artifactId>
+	<name>SixD - Bundles</name>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>xml</module>
 		<module>ws</module>
 		<module>api</module>
-		<module>importers</module>
 		<module>services</module>
 	</modules>
 </project>

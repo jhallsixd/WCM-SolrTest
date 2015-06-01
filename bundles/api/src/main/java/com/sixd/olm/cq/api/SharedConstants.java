@@ -1,4 +1,4 @@
-package com.st.olm.cq.api;
+package com.sixd.olm.cq.api;
 
 public interface SharedConstants {
 

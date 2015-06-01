@@ -1,12 +1,12 @@
-package com.st.olm.cq.api.solr.impl;
+package com.sixd.olm.cq.api.solr.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-import com.st.olm.cq.sling.models.solr.SolrFragment;
-import com.st.olm.cq.sling.models.solr.SolrPage;
-import com.st.olm.cq.sling.models.solr.SolrResource;
+import com.sixd.olm.cq.sling.models.solr.SolrFragment;
+import com.sixd.olm.cq.sling.models.solr.SolrPage;
+import com.sixd.olm.cq.sling.models.solr.SolrResource;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.commons.json.JSONArray;
@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
 import org.apache.sling.api.resource.ResourceResolver;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
-import com.st.olm.cq.api.solr.ApacheSolrResourceIndexer;
+import com.sixd.olm.cq.api.solr.ApacheSolrResourceIndexer;
 
 /**
  * Created by jhall on 10/28/14.

@@ -6,8 +6,8 @@
 	<!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
 	<!-- ====================================================================== -->
 	<parent>
-		<groupId>com.st.olm.cq</groupId>
-		<artifactId>com.st.olm.cq.st-com.bundles</artifactId>
+		<groupId>com.sixd.olm.cq</groupId>
+		<artifactId>com.sixd.olm.cq.solr-test-com.bundles</artifactId>
 		<version>2.8.14-SNAPSHOT</version>
 	</parent>
 
@@ -15,9 +15,9 @@
 	<!-- P R O J E C T D E S C R I P T I O N -->
 	<!-- ====================================================================== -->
 
-	<artifactId>com.st.olm.cq.st-com.bundles.services</artifactId>
+	<artifactId>com.sixd.olm.cq.solr-test-com.bundles.services</artifactId>
 	<packaging>bundle</packaging>
-	<name>ST.com - Bundles - Services</name>
+	<name>SixD - Bundles - Services</name>
 
 	<dependencies>
         <dependency>
@@ -100,13 +100,13 @@
 			<artifactId>cq-wcm-commons</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.st.olm.cq</groupId>
-			<artifactId>com.st.olm.cq.st-com.bundles.api</artifactId>
+			<groupId>com.sixd.olm.cq</groupId>
+			<artifactId>com.sixd.olm.cq.solr-test-com.bundles.api</artifactId>
 			<version>2.8.14-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.st.olm.cq</groupId>
-			<artifactId>com.st.olm.cq.st-com.bundles.xml</artifactId>
+			<groupId>com.sixd.olm.cq</groupId>
+			<artifactId>com.sixd.olm.cq.solr-test-com.bundles.xml</artifactId>
 			<version>2.8.14-SNAPSHOT</version>
 		</dependency>
 		<dependency>
@@ -259,9 +259,9 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Bundle-SymbolicName>com.st.olm.cq.com.st.olm.cq.st-com.bundles.services</Bundle-SymbolicName>
+						<Bundle-SymbolicName>com.sixd.olm.cq.com.sixd.olm.cq.solr-test-com.bundles.services</Bundle-SymbolicName>
 						<Sling-Model-Packages>
-							com.st.olm.cq.sling.models
+							com.sixd.olm.cq.sling.models
 						</Sling-Model-Packages>
 					</instructions>
 				</configuration>

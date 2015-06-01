@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bundles/services/src/main/java/com/com.iml" filepath="$PROJECT_DIR$/bundles/services/src/main/java/com/com.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.sixd.olm.cq.solr-test-com.iml" filepath="$PROJECT_DIR$/com.sixd.olm.cq.solr-test-com.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bundles/api/src/main/main.iml" filepath="$PROJECT_DIR$/bundles/api/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bundles/api/src/test/test.iml" filepath="$PROJECT_DIR$/bundles/api/src/test/test.iml" />
+    </modules>
+  </component>
+</project>

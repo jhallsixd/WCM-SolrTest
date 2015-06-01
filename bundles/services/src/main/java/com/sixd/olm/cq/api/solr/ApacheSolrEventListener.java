@@ -1,4 +1,4 @@
-package com.st.olm.cq.api.solr;
+package com.sixd.olm.cq.api.solr;
 
 /**
  * Created by jhall on 10/7/14.

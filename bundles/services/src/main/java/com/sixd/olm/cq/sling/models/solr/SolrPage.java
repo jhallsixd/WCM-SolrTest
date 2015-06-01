@@ -1,4 +1,4 @@
-package com.st.olm.cq.sling.models.solr;
+package com.sixd.olm.cq.sling.models.solr;
 
 import com.day.cq.tagging.Tag;
 import com.st.olm.cq.api.ccc.CCCAsset;

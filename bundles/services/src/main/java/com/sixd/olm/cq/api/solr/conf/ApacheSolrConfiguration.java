@@ -1,4 +1,4 @@
-package com.st.olm.cq.api.solr.conf;
+package com.sixd.olm.cq.api.solr.conf;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,8 +30,7 @@ import org.slf4j.LoggerFactory;
                         "environment=http://localhost",
                         "port=8983",
                         "path=solr",
-                        "contentURL=http://www.st.com",
-                        "service=service",
+                        "service=solrj",
                         "status=enabled"
                 }
         ),

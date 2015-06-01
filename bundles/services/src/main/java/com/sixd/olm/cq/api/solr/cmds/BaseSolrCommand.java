@@ -1,6 +1,6 @@
-package com.st.olm.cq.api.solr.cmds;
+package com.sixd.olm.cq.api.solr.cmds;
 
-import com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration;
+import com.sixd.olm.cq.api.solr.conf.ApacheSolrConfiguration;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.commons.json.JSONArray;

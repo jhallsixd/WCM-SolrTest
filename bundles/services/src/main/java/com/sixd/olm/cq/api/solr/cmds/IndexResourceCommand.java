@@ -1,11 +1,10 @@
-package com.st.olm.cq.api.solr.cmds;
+package com.sixd.olm.cq.api.solr.cmds;
 
-import com.st.olm.cq.api.SharedConstants;
-import com.st.olm.cq.api.products.STProduct;
-import com.st.olm.cq.api.solr.SolrCommand;
-import com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration;
-import com.st.olm.cq.api.solr.impl.ApacheSolrResourceIndexerImpl;
-import com.st.olm.cq.products.impl.provider.STProductResource;
+import com.sixd.olm.cq.api.SharedConstants;
+import com.sixd.olm.cq.api.products.STProduct;
+import com.sixd.olm.cq.api.solr.SolrCommand;
+import com.sixd.olm.cq.api.solr.conf.ApacheSolrConfiguration;
+import com.sixd.olm.cq.api.solr.impl.ApacheSolrResourceIndexerImpl;
 import org.apache.commons.httpclient.methods.multipart.ByteArrayPartSource;
 import org.apache.commons.httpclient.methods.multipart.FilePart;
 import org.apache.commons.httpclient.methods.multipart.Part;

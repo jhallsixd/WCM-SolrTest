@@ -1,4 +1,4 @@
-package com.st.olm.cq.api.solr;
+package com.sixd.olm.cq.api.solr;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.solr.client.solrj.SolrServerException;

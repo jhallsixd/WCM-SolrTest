@@ -1,11 +1,9 @@
-package com.st.olm.cq.api.solr.cmds;
+package com.sixd.olm.cq.api.solr.cmds;
 
-import com.st.olm.cq.api.solr.ApacheSolrUtil;
-import com.st.olm.cq.api.solr.SolrCommand;
-import com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration;
-import com.st.olm.cq.sling.models.solr.SolrFragment;
-import com.st.olm.cq.sling.models.solr.SolrPage;
-import com.st.olm.cq.sling.models.solr.SolrResource;
+import com.sixd.olm.cq.api.solr.ApacheSolrUtil;
+import com.sixd.olm.cq.api.solr.SolrCommand;
+import com.sixd.olm.cq.api.solr.conf.ApacheSolrConfiguration;
+import com.sixd.olm.cq.sling.models.solr.SolrPage;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
@@ -112,24 +110,10 @@ public class RemoveResourceCommand extends BaseSolrCommand implements SolrComman
             this.id = indexResource.getID().toString();
         }
 
-        if(this.type.toLowerCase().equals("st-ccc/components/pages/fragment")) {
-            SolrFragment indexResource = null;
-            indexResource = this.resource.adaptTo(SolrFragment.class);
-            this.id = indexResource.getID();
-        }
-
-        if(this.type.toLowerCase().equals("st-ccc/components/pages/resource")){
-            SolrResource indexResource = null;
-            indexResource = this.resource.adaptTo(SolrResource.class);
-            this.id = indexResource.getID();
-        }
-
         try {
 
             if(this.solrSettingsMap.get("service").equals("solrj")) {
                 removeIndexSolrj("en", this.id);
-                removeIndexSolrj("jp", this.id);
-                removeIndexSolrj("cn", this.id);
             } else {
                 removeIndexService(this.id);
             }
@@ -181,9 +165,7 @@ public class RemoveResourceCommand extends BaseSolrCommand implements SolrComman
 
             jsonID.put(jsonObj);
 
-            dataObj.put("jp", jsonID);
             dataObj.put("en", jsonID);
-            dataObj.put("cn", jsonID);
 
             NameValuePair[] data = new NameValuePair[] { new NameValuePair("delete", dataObj.toString()) };
 

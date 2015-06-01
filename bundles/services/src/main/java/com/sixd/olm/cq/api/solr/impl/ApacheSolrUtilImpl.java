@@ -1,4 +1,4 @@
-package com.st.olm.cq.api.solr.impl;
+package com.sixd.olm.cq.api.solr.impl;
 
 import java.util.Map;
 
@@ -9,8 +9,8 @@ import org.apache.sling.commons.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.st.olm.cq.api.solr.ApacheSolrUtil;
-import com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration;
+import com.sixd.olm.cq.api.solr.ApacheSolrUtil;
+import com.sixd.olm.cq.api.solr.conf.ApacheSolrConfiguration;
 
 /**
  * Created by jhall on 10/8/14.

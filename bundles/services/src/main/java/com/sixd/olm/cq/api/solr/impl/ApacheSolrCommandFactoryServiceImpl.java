@@ -1,11 +1,11 @@
-package com.st.olm.cq.api.solr.impl;
+package com.sixd.olm.cq.api.solr.impl;
 
-import com.st.olm.cq.api.solr.cmds.IndexResourceCommand;
-import com.st.olm.cq.api.solr.cmds.RemoveResourceCommand;
-import com.st.olm.cq.api.solr.conf.ApacheSolrConfiguration;
-import com.st.olm.cq.api.solr.ApacheSolrCommandFactoryService;
-import com.st.olm.cq.api.solr.SolrCommand;
-import com.st.olm.cq.api.solr.ApacheSolrUtil;
+import com.sixd.olm.cq.api.solr.cmds.IndexResourceCommand;
+import com.sixd.olm.cq.api.solr.cmds.RemoveResourceCommand;
+import com.sixd.olm.cq.api.solr.conf.ApacheSolrConfiguration;
+import com.sixd.olm.cq.api.solr.ApacheSolrCommandFactoryService;
+import com.sixd.olm.cq.api.solr.SolrCommand;
+import com.sixd.olm.cq.api.solr.ApacheSolrUtil;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
