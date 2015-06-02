@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel"
+    activeTab="{Long}0"
+    helpPath="en/cq/current/wcm/default_components.html#Text Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <text
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <text
+                    jcr:primaryType="cq:Widget"
+                    editElementQuery="div[class=&quot;text&quot;]"
+                    hideLabel="{Boolean}true"
+                    name="./text"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="cut,copy,paste-plaintext"/>
+                        <format
+                            jcr:primaryType="nt:unstructured"
+                            features="bold,italic"/>
+                        <justify
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <keys
+                            jcr:primaryType="nt:unstructured"
+                            features="-"/>
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <linkDialogConfig
+                                jcr:primaryType="nt:unstructured"
+                                height="{Long}316">
+                                <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                    <linkAdvanced
+                                        jcr:primaryType="cq:Widget"
+                                        collapsed="{Boolean}true"
+                                        collapsible="{Boolean}true"
+                                        inputValue="advanced"
+                                        name="./linkdialog/cq:adhocLinkTrackingTab"
+                                        title="Link tracking"
+                                        xtype="dialogfieldset">
+                                        <items jcr:primaryType="cq:WidgetCollection">
+                                            <enable
+                                                jcr:primaryType="nt:unstructured"
+                                                attribute="enabletracking"
+                                                fieldDescription="override analytics framework settings"
+                                                fieldLabel="Custom link tracking"
+                                                name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                xtype="checkbox">
+                                                <listeners
+                                                    jcr:primaryType="nt:unstructured"
+                                                    check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                            </enable>
+                                            <evars
+                                                jcr:primaryType="nt:unstructured"
+                                                attribute="adhocevars"
+                                                fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                fieldLabel="Include SiteCatalyst variables"
+                                                name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                xtype="textfield"/>
+                                            <events
+                                                jcr:primaryType="nt:unstructured"
+                                                attribute="adhocevents"
+                                                fieldDescription="e.g.: event2, event7"
+                                                fieldLabel="Include SiteCatalyst events"
+                                                name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                xtype="textfield"/>
+                                        </items>
+                                    </linkAdvanced>
+                                </linkAttributes>
+                            </linkDialogConfig>
+                        </links>
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <lists
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <paraformat
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <formats jcr:primaryType="cq:WidgetCollection">
+                                <paragraph
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Paragraph"
+                                    tag="p"/>
+                                <h2
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading 2"
+                                    tag="h2"/>
+                                <h3
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading 3"
+                                    tag="h3"/>
+                                <h4
+                                    jcr:primaryType="nt:unstructured"
+                                    description="Heading 4"
+                                    tag="h4"/>
+                            </formats>
+                        </paraformat>
+                        <spellcheck
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <styles
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <styles jcr:primaryType="cq:WidgetCollection">
+                                <content_disclaimer
+                                    jcr:primaryType="nt:unstructured"
+                                    cssName="content_disclaimer"
+                                    text="Content Disclaimer"/>
+                            </styles>
+                        </styles>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                    </rtePlugins>
+                    <htmlRules jcr:primaryType="nt:unstructured">
+                        <serializer jcr:primaryType="nt:unstructured">
+                            <config
+                                jcr:primaryType="nt:unstructured"
+                                idAttribMode="keep"/>
+                        </serializer>
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            protocols="[http://,https://,ftp://,tel:,mailto:,file://]"/>
+                    </htmlRules>
+                </text>
+                <richFlag
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./textIsRich"
+                    value="true"
+                    xtype="hidden"/>
+            </items>
+        </text>
+        <image
+            jcr:primaryType="cq:Widget"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            allowUpload="false"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            sizeLimit="100"
+            title="Image"
+            xtype="html5smartimage">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                loadimage="function(imageComponent){      if(this.referencedFileInfo &amp;&amp; this.referencedFileInfo.renditions){       var parent = this.findParentByType('panel');       var renditionSelect = parent.findBy(function(obj){        if(obj &amp;&amp; obj.getName &amp;&amp; obj.getName() == './rendition'){         return true;        }else{         return false;        }       })[0];       var options = [];       options.push({        value: '',        text: 'Default'       });       for (var rendition in this.referencedFileInfo.renditions) {        if(rendition.indexOf('jcr:') == -1 &amp;&amp; rendition != 'original'){         options.push({          value: rendition,          text: rendition         });        }       }       renditionSelect.setOptions(options);       if(renditionSelect.rendition){        renditionSelect.setValue(renditionSelect.rendition);       }      }     }"/>
+        </image>
+        <imageAdvanced
+            jcr:primaryType="cq:Widget"
+            title="Advanced Image Properties"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./image/jcr:title"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(leave empty to use the title defined above)"
+                    fieldLabel="Alt Text"
+                    name="./image/alt"
+                    xtype="textfield"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Drop files or pages from the Content Finder"
+                    fieldLabel="Link to"
+                    name="./image/linkURL"
+                    xtype="pathfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    name="./image/jcr:description"
+                    xtype="textarea"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <rendition
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Rendition"
+                    name="./rendition"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        beforeloadcontent="function(field,record,path){
+                        	field.rendition = record.data.rendition;
+                        }"/>
+                </rendition>
+                <position
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Image Position"
+                    name="./imagePosition"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            text="Default"
+                            value=""/>
+                        <left
+                            jcr:primaryType="nt:unstructured"
+                            text="Left"
+                            value="left"/>
+                        <right
+                            jcr:primaryType="nt:unstructured"
+                            text="Right"
+                            value="right"/>
+                    </options>
+                </position>
+            </items>
+        </imageAdvanced>
+    </items>
+</jcr:root>

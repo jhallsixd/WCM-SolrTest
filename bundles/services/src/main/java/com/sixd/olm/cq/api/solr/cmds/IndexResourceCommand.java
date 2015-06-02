@@ -192,9 +192,7 @@ public class IndexResourceCommand extends BaseSolrCommand implements SolrCommand
                 log.info("IndexResourceCommand:commitToSolrService:singleResource " + this.resource);
                 fields = indexer.getFields(this.resource, type);
             }
-            dataObj.put("jp", fields);
-            dataObj.put("en", fields);
-            dataObj.put("cn", fields);
+            dataObj.put(this.solrSettingsMap.get("core"),fields);
 
             log.info("IndexResourceCommand:commitToSolrService:objectToSend " + dataObj.toString());
 

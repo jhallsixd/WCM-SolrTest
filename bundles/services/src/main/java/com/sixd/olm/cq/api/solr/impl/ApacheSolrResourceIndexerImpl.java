@@ -40,7 +40,7 @@ public class ApacheSolrResourceIndexerImpl implements ApacheSolrResourceIndexer 
 
         try {
 
-            if (resourceType.toLowerCase().equals("st-site/components/pages/base")) {
+            if (resourceType.toLowerCase().equals("solr/components/pages/base") || resourceType.toLowerCase().equals("solr/components/pages/home") || resourceType.toLowerCase().equals("solr/components/pages/static")) {
                 SolrPage indexResource = null;
                 indexResource = this.resource.adaptTo(SolrPage.class);
                 this.solrDoc = indexResource.getSolrDoc();
@@ -66,7 +66,7 @@ public class ApacheSolrResourceIndexerImpl implements ApacheSolrResourceIndexer 
 
         try {
 
-            if (resourceType.toLowerCase().equals("solr/components/pages/base")) {
+            if (resourceType.toLowerCase().equals("solr/components/pages/base") || resourceType.toLowerCase().equals("solr/components/pages/home") || resourceType.toLowerCase().equals("solr/components/pages/static")) {
                 SolrPage indexResource = this.resource.adaptTo(SolrPage.class);
                 fields = indexResource.getFields();
             }

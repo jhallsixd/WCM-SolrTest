@@ -1,0 +1,26 @@
+<div id="breadcrumb-container" tabindex="-1" class="">
+    <div class="row">
+        <div class="large-12 columns">
+            <nav class="rcrumbs" data-sly-use.breadcrumbs="com.st.olm.cq.sly.Breadcrumb">
+                <ul class="breadcrumbs" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" data-sly-list.page="${breadcrumbs.pages}">
+                    <div data-sly-test.first="${pageList.first}" data-sly-unwrap>
+                        <li id="breadcrumb-a" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemref="breadcrumb-b">
+                            <a href="${page.path}.html" itemprop="url">
+                                <span itemprop="title">${page.navigationTitle ? page.navigationTitle : page.title}</span>
+                            </a>
+                        </li>
+                    </div>
+                    <div data-sly-test="${!first}" data-sly-unwrap>
+                        <li class="${pageList.last ? 'current' : ''}" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child"
+                            id="breadcrumb-${pageList.index < breadcrumbs.ids.length ? breadcrumbs.ids[pageList.index] : ''}"
+                            itemref="breadcrumb-${pageList.index < breadcrumbs.itemRefs.length ? breadcrumbs.itemRefs[pageList.index] : ''}">
+                            <a href="${page.path}.html" itemprop="url">
+                                <span itemprop="title">${page.navigationTitle ? page.navigationTitle : page.title}</span>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

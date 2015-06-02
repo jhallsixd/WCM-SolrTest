@@ -6,8 +6,8 @@
 <entry key="version">0.0.1-SNAPSHOT</entry>
 <entry key="dependencies" />
 <entry key="packageFormatVersion">2</entry>
-<entry key="description">ST.com Package</entry>
-<entry key="group">com.st.olm.cq</entry>
-<entry key="name">st-com-content</entry>
-<entry key="path">/etc/packages/com.st.olm.cq/st-com-content-0.0.1-SNAPSHOT.zip</entry>
+<entry key="description">Solr Test Package</entry>
+<entry key="group">com.sixd.olm.cq</entry>
+<entry key="name">solr-test-com</entry>
+<entry key="path">/etc/packages/com.sixd.olm.cq/solr-test-com-0.0.1-SNAPSHOT.zip</entry>
 </properties>
