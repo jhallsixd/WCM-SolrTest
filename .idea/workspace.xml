@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb94ec8a-ca0f-4c94-88d0-dbb6a79e72e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/src/main/content/META-INF/vault/filter.xml" afterPath="$PROJECT_DIR$/content/src/main/content/META-INF/vault/filter.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/src/main/content/jcr_root/apps/solr/config/org.apache.felix.eventadmin.impl.EventAdmin.config.xml" afterPath="$PROJECT_DIR$/content/src/main/content/jcr_root/apps/solr/config/org.apache.felix.eventadmin.impl.EventAdmin.config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/api/pom.xml" afterPath="$PROJECT_DIR$/bundles/api/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/src/main/content/META-INF/vault/properties.xml" afterPath="$PROJECT_DIR$/content/src/main/content/META-INF/vault/properties.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="fb94ec8a-ca0f-4c94-88d0-dbb6a79e72e4" name="Default" comment="" />
     <ignored path="codebase.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,52 +22,7 @@
     <favorites_list name="codebase" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SolrPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
-              <folding>
-                <element signature="e#1156#1157#0" expanded="false" />
-                <element signature="e#1196#1197#0" expanded="false" />
-                <element signature="e#3014#3015#0" expanded="false" />
-                <element signature="e#3055#3056#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexResourceCommand.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3326613">
-              <caret line="194" column="56" selection-start-line="194" selection-start-column="56" selection-end-line="194" selection-end-column="56" />
-              <folding>
-                <element signature="method#writeToSolrServer#0;class#IndexResourceCommand#0" expanded="false" />
-                <element signature="method#getServer#0;class#IndexResourceCommand#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApacheSolrResourceIndexerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="215" selection-start-line="68" selection-start-column="215" selection-end-line="68" selection-end-column="215" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getFields#1;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
-                <element signature="method#getType#0;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
-                <element signature="e#3629#3630#0" expanded="true" />
-                <element signature="e#3662#3663#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -187,6 +134,76 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="codebase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codebase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codebase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codebase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codebase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codebase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codebase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jcr_root" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -776,7 +793,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1421" height="873" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -792,8 +809,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38796228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290653" sideWeight="0.49456128" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18201596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.49456128" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1199,22 +1216,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java">
+    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        <state vertical-scroll-proportion="1.374502">
+          <caret line="199" column="89" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
           <folding>
-            <element signature="e#1156#1157#0" expanded="false" />
-            <element signature="e#1196#1197#0" expanded="false" />
-            <element signature="e#3014#3015#0" expanded="false" />
-            <element signature="e#3055#3056#0" expanded="false" />
+            <element signature="method#writeToSolrServer#0;class#IndexResourceCommand#0" expanded="false" />
+            <element signature="method#getServer#0;class#IndexResourceCommand#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.4621514">
           <caret line="68" column="215" selection-start-line="68" selection-start-column="215" selection-end-line="68" selection-end-column="215" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1226,13 +1241,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java">
+    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326613">
-          <caret line="194" column="56" selection-start-line="194" selection-start-column="56" selection-end-line="194" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.5976096">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
           <folding>
-            <element signature="method#writeToSolrServer#0;class#IndexResourceCommand#0" expanded="false" />
-            <element signature="method#getServer#0;class#IndexResourceCommand#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
