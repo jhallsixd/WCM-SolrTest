@@ -24,16 +24,15 @@ import org.slf4j.LoggerFactory;
 
 @Properties({
         @Property(
-                name = "apachesolr.handler.dev.settings",
+                name = "apachesolr.config.dev.settings",
                 description = "DEV Profile",
                 value = {
                         "environment=http://localhost",
                         "port=8983",
                         "path=solr",
                         "service=solrj",
-                        "core=en",
-                        "sitepath=geometrixx",
-                        "status=enabled"
+                        "core=collection1",
+                        "sitepath=geometrixx"
                 }
         ),
         @Property(
@@ -52,7 +51,7 @@ import org.slf4j.LoggerFactory;
  */
 public class ApacheSolrConfiguration {
     //environment const
-    private static final String DEV_ENVIRONMENT_MAP = "apachesolr.handler.dev.settings";
+    private static final String DEV_ENVIRONMENT_MAP = "apachesolr.config.dev.settings";
     private static final String SETTINGS_ENVIRONMENT_MAP = "apachesolr.config.environment.settings";
 
     // HashMap vars

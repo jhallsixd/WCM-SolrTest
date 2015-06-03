@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fb94ec8a-ca0f-4c94-88d0-dbb6a79e72e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codebase.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,6 +34,21 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#commitToSolrService#0;class#IndexResourceCommand#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApacheSolrConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
+              <folding>
+                <element signature="e#3626#3627#0" expanded="true" />
+                <element signature="e#3669#3670#0" expanded="true" />
+                <element signature="e#3723#3724#0" expanded="true" />
+                <element signature="e#3761#3762#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,10 +125,10 @@
         <option value="$PROJECT_DIR$/content/src/main/content/META-INF/vault/properties.xml" />
         <option value="$PROJECT_DIR$/content/src/main/content/META-INF/vault/filter.xml" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java" />
-        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java" />
+        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" />
       </list>
     </option>
   </component>
@@ -974,24 +986,6 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java</url>
           <line>251</line>
           <properties />
@@ -1010,7 +1004,7 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1378,14 +1372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37414965">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23809524">
@@ -1393,14 +1379,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1413,6 +1391,27 @@
             <element signature="method#getFields#0;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
             <element signature="method#getFields#1;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
             <element signature="method#getType#0;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
+          <folding>
+            <element signature="e#3626#3627#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3723#3724#0" expanded="true" />
+            <element signature="e#3761#3762#0" expanded="true" />
           </folding>
         </state>
       </provider>
