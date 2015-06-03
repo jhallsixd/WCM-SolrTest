@@ -17,6 +17,7 @@ import org.apache.sling.api.resource.ResourceResolver;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 import com.sixd.olm.cq.api.solr.ApacheSolrResourceIndexer;
+import java.util.*;
 
 /**
  * Created by jhall on 10/28/14.
@@ -30,17 +31,19 @@ public class ApacheSolrResourceIndexerImpl implements ApacheSolrResourceIndexer 
     private String resourceType;
     private SolrInputDocument solrDoc;
     private Boolean isDoc;
+    public Map<String, String> solrSettingsMap;
 
-    public SolrInputDocument index(Resource res, String type) throws IOException, SolrServerException {
+    public SolrInputDocument index(Resource res, String type, Map<String, String> settingsMap ) throws IOException, SolrServerException {
 
         this.resource = res;
         this.resourceType = type;
         this.solrDoc = new SolrInputDocument();
         this.isDoc = false;
+        this.solrSettingsMap = settingsMap;
 
         try {
-
-            if (resourceType.toLowerCase().equals("solr/components/pages/base") || resourceType.toLowerCase().equals("solr/components/pages/home") || resourceType.toLowerCase().equals("solr/components/pages/static")) {
+            String sitePath = this.solrSettingsMap.get("sitepath");
+            if (resourceType.toLowerCase().contains(sitePath)) {
                 SolrPage indexResource = null;
                 indexResource = this.resource.adaptTo(SolrPage.class);
                 this.solrDoc = indexResource.getSolrDoc();

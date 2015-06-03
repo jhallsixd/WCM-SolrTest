@@ -212,7 +212,7 @@ public class IndexResourceCommand extends BaseSolrCommand implements SolrCommand
     public void commitToSolrJ(String type) {
         try {
 
-            SolrInputDocument doc = indexer.index(this.resource, type);
+            SolrInputDocument doc = indexer.index(this.resource, type, this.solrSettingsMap);
             log.info("committing doc to server " + doc.toString());
             String core = this.solrSettingsMap.get("core");
             writeToSolrServer(core, doc);

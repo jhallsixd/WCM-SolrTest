@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb94ec8a-ca0f-4c94-88d0-dbb6a79e72e4" name="Default" comment="" />
+    <list default="true" id="fb94ec8a-ca0f-4c94-88d0-dbb6a79e72e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java" />
+    </list>
     <ignored path="codebase.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,7 +28,46 @@
     <favorites_list name="codebase" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="IndexResourceCommand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#commitToSolrService#0;class#IndexResourceCommand#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SolrPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApacheSolrResourceIndexerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getFields#0;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
+                <element signature="method#getFields#1;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
+                <element signature="method#getType#0;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,7 +83,6 @@
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/SolrIndexWebConsole.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/SolrCommand.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrUtil.java" />
-        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrCommandFactoryService.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/aws/impl/AWSManagerImpl.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrUtilImpl.java" />
@@ -49,12 +93,10 @@
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/config/StaticConfigListener.java" />
         <option value="$PROJECT_DIR$/bundles/api/src/main/java/com/sixd/olm/cq/api/SharedConstants.java" />
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrEventListener.java" />
         <option value="$PROJECT_DIR$/bundles/content/pom.xml" />
         <option value="$PROJECT_DIR$/wrappers/noggit/pom.xml" />
         <option value="$PROJECT_DIR$/wrappers/noggit/target/classes/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/RemoveResourceCommand.java" />
         <option value="$PROJECT_DIR$/content/src/main/content/jcr_root/apps/solr/components/pages/static/.content.xml" />
         <option value="$PROJECT_DIR$/content/src/main/content/jcr_root/apps/solr/components/pages/home/.content.xml" />
@@ -70,8 +112,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/content/src/main/content/META-INF/vault/properties.xml" />
         <option value="$PROJECT_DIR$/content/src/main/content/META-INF/vault/filter.xml" />
-        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java" />
+        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" />
+        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java" />
+        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java" />
+        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java" />
       </list>
     </option>
   </component>
@@ -523,6 +568,64 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codebase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codebase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sixd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="olm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="cmds" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -572,7 +675,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Maven.Solr-Build">
+  <component name="RunManager" selected="Remote.SolrTest-Debug">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -712,7 +815,7 @@
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+      <option name="PORT" value="58242" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -743,7 +846,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="Solr-Build" type="MavenRunConfiguration" factoryName="Maven">
+    <configuration default="false" name="SolrTest-Build" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -770,8 +873,21 @@
       </MavenSettings>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Maven.Solr-Build" />
+    <configuration default="false" name="SolrTest-Debug" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="58242" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58242" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Maven.SolrTest-Build" />
+      <item index="1" class="java.lang.String" itemvalue="Remote.SolrTest-Debug" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -801,7 +917,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.50543875" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -809,7 +925,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18201596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18201596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.49456128" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -832,7 +948,70 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java</url>
+          <line>214</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java</url>
+          <line>239</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java</url>
+          <line>233</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java</url>
+          <line>251</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java</url>
+          <line>254</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java</url>
+          <line>230</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -841,13 +1020,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
@@ -970,6 +1142,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4233871">
           <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -994,19 +1169,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding>
-            <element signature="e#3614#3615#0" expanded="false" />
-            <element signature="e#3657#3658#0" expanded="false" />
-            <element signature="e#3711#3712#0" expanded="false" />
-            <element signature="e#3749#3750#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1216,37 +1378,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java">
+    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.374502">
-          <caret line="199" column="89" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-          <folding>
-            <element signature="method#writeToSolrServer#0;class#IndexResourceCommand#0" expanded="false" />
-            <element signature="method#getServer#0;class#IndexResourceCommand#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.37414965">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java">
+    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4621514">
-          <caret line="68" column="215" selection-start-line="68" selection-start-column="215" selection-end-line="68" selection-end-column="215" />
+        <state vertical-scroll-proportion="0.23809524">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getFields#1;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
-            <element signature="method#getType#0;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
-            <element signature="e#3629#3630#0" expanded="true" />
-            <element signature="e#3662#3663#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5976096">
-          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/impl/ApacheSolrResourceIndexerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getFields#0;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
+            <element signature="method#getFields#1;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
+            <element signature="method#getType#0;class#ApacheSolrResourceIndexerImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/IndexResourceCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#commitToSolrService#0;class#IndexResourceCommand#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -64,9 +64,9 @@ public class SolrPage {
 
             JSONObject jsonObj = new JSONObject();
             jsonObj.put("id", this.path.hashCode());
-            jsonObj.put("link", this.link);
-            jsonObj.put("type", this.type);
-            jsonObj.put("link_parent", this.link_parent);
+            //jsonObj.put("link", this.link);
+            //jsonObj.put("type", this.type);
+            //jsonObj.put("link_parent", this.link_parent);
             jsonObj.put("title", this.title);
 
             fieldsArray.put(jsonObj);

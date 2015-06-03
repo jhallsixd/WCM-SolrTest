@@ -32,6 +32,7 @@ import org.slf4j.LoggerFactory;
                         "path=solr",
                         "service=solrj",
                         "core=en",
+                        "sitepath=geometrixx",
                         "status=enabled"
                 }
         ),
