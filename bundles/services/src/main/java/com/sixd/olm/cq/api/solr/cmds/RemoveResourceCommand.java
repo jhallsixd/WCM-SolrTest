@@ -104,7 +104,7 @@ public class RemoveResourceCommand extends BaseSolrCommand implements SolrComman
 
     public void prune () throws IOException, SolrServerException {
 
-        if(this.type.toLowerCase().equals("solr/components/pages/base")) {
+        if(this.type.toLowerCase().contains(this.solrSettingsMap.get("sitepath"))) {
             SolrPage indexResource = null;
             indexResource = this.resource.adaptTo(SolrPage.class);
             this.id = indexResource.getID().toString();

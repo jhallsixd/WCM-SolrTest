@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb94ec8a-ca0f-4c94-88d0-dbb6a79e72e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/RemoveResourceCommand.java" afterPath="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/RemoveResourceCommand.java" />
     </list>
     <ignored path="codebase.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,6 +34,16 @@
                 <element signature="imports" expanded="true" />
                 <element signature="method#commitToSolrService#0;class#IndexResourceCommand#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoveResourceCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/RemoveResourceCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="106" column="79" selection-start-line="106" selection-start-column="79" selection-end-line="106" selection-end-column="79" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +118,6 @@
         <option value="$PROJECT_DIR$/bundles/content/pom.xml" />
         <option value="$PROJECT_DIR$/wrappers/noggit/pom.xml" />
         <option value="$PROJECT_DIR$/wrappers/noggit/target/classes/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/RemoveResourceCommand.java" />
         <option value="$PROJECT_DIR$/content/src/main/content/jcr_root/apps/solr/components/pages/static/.content.xml" />
         <option value="$PROJECT_DIR$/content/src/main/content/jcr_root/apps/solr/components/pages/home/.content.xml" />
         <option value="$PROJECT_DIR$/content/src/main/content/jcr_root/apps/solr/components/pages/base/.content.xml" />
@@ -129,6 +137,7 @@
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/ApacheSolrResourceIndexer.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/sling/models/solr/SolrPage.java" />
         <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/conf/ApacheSolrConfiguration.java" />
+        <option value="$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/RemoveResourceCommand.java" />
       </list>
     </option>
   </component>
@@ -929,7 +938,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.50543875" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1003,8 +1012,20 @@
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/RemoveResourceCommand.java</url>
+          <line>150</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/RemoveResourceCommand.java</url>
+          <line>194</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1163,20 +1184,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/RemoveResourceCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="118" column="44" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3157#3158#0" expanded="false" />
-            <element signature="e#3207#3208#0" expanded="false" />
-            <element signature="e#3392#3393#0" expanded="false" />
-            <element signature="e#3430#3431#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1413,6 +1420,14 @@
             <element signature="e#3723#3724#0" expanded="true" />
             <element signature="e#3761#3762#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundles/services/src/main/java/com/sixd/olm/cq/api/solr/cmds/RemoveResourceCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="79" selection-start-line="106" selection-start-column="79" selection-end-line="106" selection-end-column="79" />
+          <folding />
         </state>
       </provider>
     </entry>
