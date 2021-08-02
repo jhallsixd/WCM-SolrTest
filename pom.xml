@@ -362,7 +362,7 @@
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-compress</artifactId>
-				<version>1.4.1-withoutxz</version>
+				<version>1.21</version>
 				<scope>provided</scope>
 			</dependency>
 			<!-- Testing Dependencies -->
